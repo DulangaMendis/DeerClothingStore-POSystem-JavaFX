@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="725.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cashier.CashierRegistrationFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#001f3f" height="725.0" layoutX="454.0" stroke="BLACK" strokeType="INSIDE" width="311.0" />
+      <ImageView fitHeight="346.0" fitWidth="267.0" layoutX="475.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/clothing%20store%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="44.0" prefHeight="46.0" prefWidth="386.0" text="|Cashier Registraion Form">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5681818181818181" centerY="0.3786407766990292" focusDistance="-0.04878048780487809" radius="1.0">
+               <stops>
+                  <Stop color="#3c42b5" />
+                  <Stop color="#0e131b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde1e4" height="610.0" layoutX="14.0" layoutY="97.0" stroke="BLACK" strokeType="INSIDE" width="428.0" />
+      <Label layoutX="59.0" layoutY="149.0" prefHeight="25.0" prefWidth="89.0" text="CashierId" textFill="#0a4d08">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbtitle" layoutX="59.0" layoutY="198.0" prefHeight="15.0" prefWidth="89.0" promptText="Title" />
+      <Label layoutX="59.0" layoutY="259.0" prefHeight="25.0" prefWidth="89.0" text="Name" textFill="#0a4d08">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="523.0" prefHeight="25.0" prefWidth="105.0" text="Passoword" textFill="#ff3939">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="468.0" prefHeight="25.0" prefWidth="89.0" text="UserName" textFill="#ff2926">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="412.0" prefHeight="25.0" prefWidth="89.0" text="Contact" textFill="#0a4d08">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="362.0" prefHeight="25.0" prefWidth="89.0" text="Email" textFill="#0a4d08">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="313.0" prefHeight="25.0" prefWidth="89.0" text="Address" textFill="#0a4d08">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Label>
+      <Circle fill="#a5abb2" layoutX="38.0" layoutY="162.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="38.0" layoutY="214.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="39.0" layoutY="271.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="39.0" layoutY="326.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="40.0" layoutY="374.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="40.0" layoutY="425.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="40.0" layoutY="481.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="40.0" layoutY="536.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#a5abb2" layoutX="40.0" layoutY="587.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXTextField fx:id="txtname" layoutX="192.0" layoutY="244.0" prefHeight="31.0" prefWidth="234.0" />
+      <JFXTextField fx:id="txtaddress" layoutX="192.0" layoutY="298.0" prefHeight="31.0" prefWidth="234.0" />
+      <TextField fx:id="txtcashierid" layoutX="192.0" layoutY="147.0" prefHeight="31.0" prefWidth="234.0" promptText="C####" />
+      <TextField fx:id="txtemail" layoutX="192.0" layoutY="359.0" prefHeight="31.0" prefWidth="234.0" promptText="example@gmail.com" />
+      <TextField fx:id="txtcontact" layoutX="192.0" layoutY="410.0" prefHeight="31.0" prefWidth="234.0" />
+      <TextField fx:id="txtusername" layoutX="192.0" layoutY="466.0" prefHeight="31.0" prefWidth="234.0" />
+      <TextField fx:id="txtpassowrd" layoutX="192.0" layoutY="521.0" prefHeight="31.0" prefWidth="234.0" promptText="DCSC####" />
+      <JFXDatePicker fx:id="datepickerdateofjoining" layoutX="63.0" layoutY="572.0" prefHeight="31.0" prefWidth="368.0" promptText="Date Of Joining" />
+      <JFXButton layoutX="271.0" layoutY="651.0" onAction="#btnaddcashieronaction" prefHeight="42.0" prefWidth="156.0" style="-fx-background-color: blue;" text="Add Cashier" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="482.0" layoutY="646.0" onAction="#btnviewcashierdetailsonaction" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: white;" text="View Cashier Details" textFill="#171716">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="482.0" layoutY="681.0" onAction="#btnbacktodashboardonaction" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: white;" text="Backto Dashboard" textFill="#171716">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

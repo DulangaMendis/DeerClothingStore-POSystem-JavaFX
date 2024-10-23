@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="774.0" prefWidth="1560.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <AnchorPane layoutY="3.0" prefHeight="771.0" prefWidth="301.0" style="-fx-background-color: #001F3F;">
+         <children>
+            <ImageView fitHeight="287.0" fitWidth="334.0" layoutX="-4.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/clothing%20store%20logo.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="114.0" layoutY="-3.0" strokeType="INSIDE" width="301.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#003d03" />
+                        <Stop color="#277254" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <stroke>
+                  <RadialGradient centerX="0.5681818181818181" centerY="0.6407766990291263" focusDistance="-1.0" radius="0.47560975609756095">
+                     <stops>
+                        <Stop color="#fff3ee" />
+                        <Stop color="#5cae4c" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <Label layoutX="32.0" layoutY="40.0" prefHeight="21.0" prefWidth="234.0" text="Welcome , Deer Clothig Store !" textFill="#f5f5e8">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="7.0" layoutY="392.0" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #173B45;" text="Dash Board" textFill="#9aa499">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="439.0" onAction="#btnproductonactin" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #173B45;" text="Product" textFill="#9aa499">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="5.0" layoutY="487.0" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #173B45;" text="Place Order" textFill="#9aa498">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="5.0" layoutY="536.0" onAction="#btnsupplieronaction" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #173B45;" text="Supliers" textFill="#9aa399">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="57.0" fitWidth="58.0" layoutX="21.0" layoutY="692.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/DashBoard%20Images/signup%20image.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="72.0" layoutY="705.0" onAction="#btnsignoutonaction" text="Sign Out" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="584.0" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #173B45;" text="Sales Report" textFill="#9aa399">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="229.0" layoutX="310.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="1220.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="520.0" layoutX="310.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="1226.0" />
+      <AnchorPane layoutX="327.0" layoutY="19.0" prefHeight="200.0" prefWidth="287.0" style="-fx-background-color: #001F3F;">
+         <children>
+            <Label layoutX="241.0" layoutY="16.0" prefHeight="43.0" prefWidth="32.0" text="0" textFill="#e8e1e1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="176.0" fitWidth="214.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/DashBoard%20Images/Today%20income%20Image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="627.0" layoutY="19.0" prefHeight="200.0" prefWidth="287.0" style="-fx-background-color: #001F3F;">
+         <children>
+            <Label layoutX="243.0" layoutY="14.0" prefHeight="43.0" prefWidth="32.0" text="0" textFill="#e8e1e1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="176.0" fitWidth="214.0" layoutX="26.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/DashBoard%20Images/Total%20Income%20Image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="925.0" layoutY="19.0" prefHeight="200.0" prefWidth="287.0" style="-fx-background-color: #001F3F;">
+         <children>
+            <Label layoutX="241.0" layoutY="13.0" prefHeight="43.0" prefWidth="32.0" text="0" textFill="#e8e1e1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="176.0" fitWidth="214.0" layoutX="30.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/DashBoard%20Images/Number%20OF%20products%20Image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde2e8" height="474.0" layoutX="327.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="715.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e4e8" height="474.0" layoutX="1055.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="468.0" />
+      <StackedAreaChart layoutX="316.0" layoutY="295.0" prefHeight="426.0" prefWidth="695.0" title="Day Income Chart">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedAreaChart>
+      <BarChart layoutX="1066.0" layoutY="301.0" prefHeight="426.0" prefWidth="443.0" title="Total Icome Chart">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <AnchorPane layoutX="1223.0" layoutY="18.0" prefHeight="176.0" prefWidth="287.0" style="-fx-background-color: #001F3F;">
+         <children>
+            <Label layoutX="241.0" layoutY="13.0" prefHeight="43.0" prefWidth="32.0" text="0" textFill="#e8e1e1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="176.0" fitWidth="214.0" layoutX="35.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assests/DashBoard%20Images/Number%20Of%20Suppliers.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

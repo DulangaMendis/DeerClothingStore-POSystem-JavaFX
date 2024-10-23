@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.MnagerLoginController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="-1.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="567.0" prefWidth="340.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXButton layoutX="29.0" layoutY="461.0" onAction="#btncashierregistrationonaction" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #3A6D8C;" text="Cashier Registration" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+            <AnchorPane layoutX="339.0" prefHeight="567.0" prefWidth="420.0" style="-fx-background-color: #001F3F;">
+               <children>
+                  <ImageView fitHeight="416.0" fitWidth="382.0" layoutX="7.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assests/clothing%20store%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="151.0" layoutY="384.0" prefHeight="20.0" prefWidth="115.0" text="Run Free, Dress Bold">
+                     <textFill>
+                        <RadialGradient centerX="0.5681818181818181" centerY="0.3786407766990292" focusDistance="-0.04878048780487809" radius="1.0">
+                           <stops>
+                              <Stop color="#78c611" />
+                              <Stop color="#dcddcd" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Arial" size="10.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="71.0" layoutY="518.0" onAction="#cashierbtnonaction" prefHeight="0.0" prefWidth="275.0" style="-fx-background-color: #3A6D8C;" text="Cashier" textFill="#eaf2e1">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Label layoutX="42.0" layoutY="158.0" prefHeight="46.0" prefWidth="275.0" text="|Mnager Login">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5681818181818181" centerY="0.3786407766990292" focusDistance="-0.04878048780487809" radius="1.0">
+                     <stops>
+                        <Stop color="#3c42b5" />
+                        <Stop color="#0e131b" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="txtusername" layoutX="29.0" layoutY="253.0" prefHeight="31.0" prefWidth="285.0" promptText="User_name" />
+            <JFXPasswordField fx:id="pwfpassword" layoutX="29.0" layoutY="318.0" prefHeight="31.0" prefWidth="285.0" promptText="Password" />
+            <Hyperlink layoutX="27.0" layoutY="363.0" prefHeight="29.0" prefWidth="123.0" text="Forgot password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <JFXButton layoutX="29.0" layoutY="411.0" onAction="#btnloginonaction" prefHeight="31.0" prefWidth="285.0" style="-fx-background-color: #3A6D8C;" text="Login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5681818181818181" centerY="0.4563106796116505" focusDistance="-1.0" radius="0.47560975609756095">
+                     <stops>
+                        <Stop color="#389761" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
